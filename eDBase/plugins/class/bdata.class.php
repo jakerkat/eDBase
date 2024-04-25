@@ -31,7 +31,9 @@ class BData{
 		global $BD_Obj;
 		$SysVars = $BD_Obj->SysVars;
 		include($BD_Obj->DIRroot."eDBase/bdata/".$fileconnect);
-		include($BD_Obj->DIRroot."config/clave.php");
+		if(file_exists($BD_Obj->DIRroot."config/clave.php")){
+			include($BD_Obj->DIRroot."config/clave.php");
+		}
 		$this->fileconnect = str_replace(".php","",$fileconnect);
 		if($BD_Obj->SysVars["encrypt"]){
 			$password = BDheader::decrypt($BD_Obj->SysVars["password"],$clave);
