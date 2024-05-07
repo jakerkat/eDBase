@@ -1,2 +1,4 @@
 # eDBase
-Nuestra utilería facilita la conexión de diversos tipos de bases de datos con PHP. Con ella, puedes establecer conexiones PHP de manera sencilla y ejecutar consultas de forma más eficiente y organizada, simplificando así el proceso de manejo de datos en tus proyectos.
+Libreria para conectar bases de datos a proyecto PHP, puedes establecer conexiones PHP de manera sencilla y ejecutar consultas de forma más eficiente y organizada, simplificando así el proceso de manejo de datos en tus proyectos.
+
+Bienvenido al uso de esta libreria con la que podras conectarte rápidamente a una base de datos y organizar mejor las consultas para tus proyectos.
