@@ -35,3 +35,23 @@ $BD_Obj->SysVars["NoFiles"]="100"; // Número máximo de archivos a guardar.
 $BD_Obj->SysVars["encrypt"]="0"; // Si se encrypta la contraseña o no, más adelante se explica como activarla
 ?>
 </pre>
+
+# Crear primera consulta
+ 
+David Urrutia edited this page 2 weeks ago · 2 revisions
+Para crear una consulta simple, sería con el siguiente código.
+<pre>
+$conex = new BData;
+$conex ->conexFile("NombreConexion.php"); // Nombre del archivo de conexión
+$conex ->tableBD("NombreTabla"); // Nombre de la tabla que vas a consultar
+$conex ->consultaBD("SELECT"); // Tipo de consulta
+
+echo $conex ->conSQL; // Te muestra el SQL de la consulta que estás haciendo.
+echo $conex ->resultError; // Te muestra los errores de la consulta ejecutada, sí no hay aparece vacío.
+
+$conex ->result; // array que contiene el resultado de la consulta.
+
+Donde:
+
+echo $conex ->result[0][0]; // sería el título de la primer columna.
+</pre>
