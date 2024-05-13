@@ -13,4 +13,4 @@ The supported version of eDBase:
 
 The library is correcting issues constantly but a long term changes are every year.
 
-All the functions work correctly in MySQL but the other types needs some development.
+All the functions work correctly in MySQL but the other BD types needs some development in some especifically functions. But to make any SQL, the library works perfectly.
