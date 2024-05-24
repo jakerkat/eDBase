@@ -53,5 +53,5 @@ $conex ->result; // array que contiene el resultado de la consulta.
 
 Donde:
 
-echo $conex ->result[0][0]; // sería el título de la primer columna.
+echo $conex ->result[0][0]; // sería el título de la primer columna. El primer array serían las filas y el segundo las columnas
 </pre>
